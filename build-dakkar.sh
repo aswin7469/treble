@@ -192,6 +192,14 @@ function get_rom_type() {
                 extra_make_options="WITHOUT_CHECK_API=true"
                 jack_enabled="false"
                 ;;
+            potato-ten)
+                mainrepo="https://github.com/PotatoProject/manifest.git"
+                mainbranch="croquette-release"
+                localManifestBranch="android-10.0"
+                treble_generate="potato"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                jack_enabled="false
+
             crdroid-oreo)
                 mainrepo="https://github.com/crdroidandroid/android.git"
                 mainbranch="8.1"
