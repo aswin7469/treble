@@ -54,6 +54,8 @@ ROM types:
   pixel81
   pixel90
   potato-pie
+  potato-ten
+  pixys-ten
   rebellion-pie
   rr-oreo
   slim-oreo
@@ -188,6 +190,22 @@ function get_rom_type() {
                 mainrepo="https://github.com/PotatoProject/manifest.git"
                 mainbranch="baked-release"
                 localManifestBranch="android-9.0"
+                treble_generate="potato"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                jack_enabled="false"
+                ;;
+	    potato-ten)
+                mainrepo="https://github.com/PotatoProject/manifest.git"
+                mainbranch="croquette-release"
+                localManifestBranch="android-10.0"
+                treble_generate="potato"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                jack_enabled="false"
+                ;;
+	    pixys-ten)
+                mainrepo="https://github.com/PixysOS/manifest"
+                mainbranch="ten"
+                localManifestBranch="android-10.0"
                 treble_generate="potato"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 jack_enabled="false"
